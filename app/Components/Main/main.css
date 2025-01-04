@@ -1,0 +1,79 @@
+.features {
+background-color: #073543;
+}
+
+#main{
+  background-color: #073543;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* White text */
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slightly less zoom for subtle effect */
+  background-color: #0a6574; /* Hover effect with a brighter teal */
+  color: #ffffff;
+}
+
+.project-icon {
+  height: 4rem;
+  width: 4rem;
+  background-color: #fff; /* Matches the light teal-blue */
+  transition: background-color 0.3s ease;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-icon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project:hover .project-icon {
+  background-color: #d9f0f8;
+}
+
+.project-title {
+  font-size: 1.2rem; 
+  font-weight: 600;
+  color: inherit;
+}
+
+.project-description {
+  font-size: 0.8rem;
+  line-height: 1.5; 
+  color: inherit;
+}
+
+.project:first-child ,
+.project:nth-child(2),
+.project:nth-child(3),
+.project:nth-child(4),
+.project:nth-child(5),
+.project:nth-child(6)
+{
+  position: relative;
+  top: -5.75rem;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
